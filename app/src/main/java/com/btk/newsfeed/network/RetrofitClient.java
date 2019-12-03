@@ -9,9 +9,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    private static final String BASE_URL = "";
+    private static final String BASE_URL = "https://newsapi.org/v2/";
+    public static  final String API_KEY = "6afcca8a53c447398041d61545310e3f";
     private static Retrofit INSTANCE;
-    private static HttpLoggingInterceptor loggingInterceptor;
+    private static HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
     private static OkHttpClient okHttpClient;
 
     public static Retrofit getInstance() {
