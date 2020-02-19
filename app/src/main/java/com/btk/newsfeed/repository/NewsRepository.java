@@ -29,7 +29,6 @@ public class NewsRepository {
 
             @Override
             public void onFailure(Call<ResponseData> call, Throwable t) {
-
             }
         });
     }
